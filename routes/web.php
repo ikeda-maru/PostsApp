@@ -23,3 +23,5 @@ Route::post('/example/posts', [\App\Http\Controllers\Example\StoreController::cl
 Route::get('/example/{id}', [\App\Http\Controllers\Example\ShowController::class, 'index'])->name('example.show');
 Route::get('/example/{id}/edit',  [\App\Http\Controllers\Example\EditController::class, 'index']);
 Route::put('/example/{id}',  [\App\Http\Controllers\Example\UpdateController::class, 'index']);
+Route::delete('/example/{id}',  [\App\Http\Controllers\Example\DestroyController::class, 'index']);
+Route::get('/example', [\App\Http\Controllers\Example\IndexController::class, 'index'])->name('example.index');
